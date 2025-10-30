@@ -1,0 +1,21 @@
+body{
+    background-color: rgb(55, 100, 12);
+    color: wheat;
+}
+h1{
+    color: white;
+    background-color: rgb(46, 139, 220);
+    padding: 30px 15px;
+}
+p {
+    background-color: cadetblue;
+}
+.flavors {
+    background-color: black;
+    font-style: italic;
+    color: yellow;
+}
+#cultures {
+    font-weight: bold;
+    color: orange;
+}

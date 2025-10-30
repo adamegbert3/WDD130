@@ -1,0 +1,22 @@
+body {
+    background-color: orange;
+}
+img {
+    border-radius: 100%;
+    width: 50px;
+}
+header {
+    display: grid;
+    grid-template-columns: 1fr 8fr 1fr;
+    padding: 10px;
+}
+header h1 {
+    text-align: center;
+    margin: 0;
+}
+nav a {
+
+}
+main a {
+    
+}

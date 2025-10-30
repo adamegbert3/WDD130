@@ -1,0 +1,179 @@
+/* ===========================
+   Dry Oar Rafting - Clean CSS
+   Ordered: Variables → Reset → Base → Header → Hero → Main Grid → Footer → Utilities → Responsive
+   =========================== */
+
+/* ---------- VARIABLES ---------- */
+:root{
+  --bg: #fcfbfb;
+  --dark: rgba(20,30,13,0.9);
+  --dark-soft: rgba(20,30,13,0.7);
+  --accent: #d9c2a3;
+  --cta: #2a6f97;
+  --cta-dark: #013a63;
+  --text: #222;
+  --radius: 10px;
+  --gap: 1.25rem;
+}
+
+/* ---------- RESET / BASE ---------- */
+* { box-sizing: border-box; }
+html,body { height:100%; margin:0; padding:0; }
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: "Helvetica", Arial, sans-serif;
+  line-height: 1.5;
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
+}
+
+/* small utility */
+.container { max-width: 1200px; margin: 0 auto; padding: 0 1rem; }
+
+/* ---------- HEADER ---------- */
+header {
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  background-color: var(--dark);
+  padding: 0 2.5rem;
+  height: 100px;
+}
+
+/* logo link and image */
+#logo_link { display:flex; align-items:center; text-decoration:none; }
+.logo { height: 70px; width: auto; display:block; }
+
+/* navigation */
+nav {
+  display:flex;
+  gap: 1.5rem;            /* consistent spacing between links */
+  align-items:center;
+}
+nav a {
+  color: #fff;
+  text-decoration:none;
+  font-size: 1.05rem;
+  font-weight:500;
+  padding: 0.6rem 0.9rem;
+  border-radius: 6px;
+  transition: background-color .22s ease, color .22s ease, transform .12s ease;
+}
+nav a:hover,
+nav a:focus {
+  background-color: var(--accent);
+  color: #000;
+  transform: translateY(-2px);
+}
+
+/* ---------- HERO ---------- */
+#hero { position: relative; margin-top: 10px; } /* small gap under header */
+#hero-box img { display:block; width:100%; height:auto; border-radius: var(--radius); }
+
+/* overlay message */
+#hero-msg {
+  position: absolute;
+  top: 28%;
+  left: 50%;
+  transform: translate(-50%, -28%);
+  text-align:center;
+  color: #fff;
+  background: rgba(0,0,0,0.45);
+  padding: 1.25rem 1.5rem;
+  border-radius: var(--radius);
+  max-width: 90%;
+}
+
+/* hero CTA button */
+.button-box .book {
+  display:inline-block;
+  background: var(--accent);
+  color:#000;
+  padding: 0.6rem 1.1rem;
+  border-radius: 8px;
+  font-weight:700;
+  text-decoration:none;
+  margin-top:0.6rem;
+}
+.button-box .book:hover { background:#000; color:#fff; }
+
+/* ---------- MAIN GRID / CARDS ---------- */
+.home-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.25rem;
+  padding: 2.5rem;
+  align-items:start;
+  container-type: inline-size;
+}
+
+.rivers-card, .camping-card, .rapids-card {
+  background: #fff;
+  border-radius: var(--radius);
+  padding: 0.6rem;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.06);
+}
+
+.card-img { width:100%; height:auto; border-radius: 8px; display:block; }
+.icon { width: 80px; margin-top: 0.5rem; display:block; margin-left:auto; margin-right:auto; }
+
+.mountains {
+  grid-column: 1 / -1;
+  width: 100%;
+  border-radius: var(--radius);
+  display:block;
+  margin-top: 0.75rem;
+}
+
+.msg {
+  grid-column: 1 / -1;
+  background-color: var(--accent);
+  padding: 1rem;
+  border-radius: var(--radius);
+  color: #000;
+  text-align:center;
+}
+
+/* join button */
+.join {
+  display:inline-block;
+  background: var(--cta);
+  color: #fff;
+  padding: 0.6rem 1.25rem;
+  border-radius: 8px;
+  text-decoration:none;
+  font-weight:700;
+  margin-top: 0.5rem;
+}
+.join:hover { background: var(--cta-dark); }
+
+/* ---------- FOOTER ---------- */
+footer {
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:space-between;
+  align-items:center;
+  gap: 0.75rem;
+  padding: 1.25rem 2rem;
+  background-color: var(--dark-soft);
+  color:#fff;
+}
+footer p { margin:0; font-size: 1rem; }
+footer a { color:#fff; text-decoration:none; }
+footer a:hover { text-decoration: underline; }
+
+.social img { width:40px; height:auto; display:inline-block; margin-left:0.5rem; }
+
+/* ---------- UTILITIES ---------- */
+.hidden { display:none !important; }
+.center { text-align:center; }
+
+/* ---------- RESPONSIVE ---------- */
+@media (max-width: 900px) {
+  header { flex-direction: column; gap: 0.5rem; height:auto; padding: 1rem; }
+  nav { flex-direction: column; gap: 0.5rem; width:100%; align-items:center; }
+  .home-grid { grid-template-columns: 1fr; padding: 1rem; }
+  .mountains, .msg { grid-column: auto; }
+  #hero-msg { position: static; transform: none; margin-top: -5rem; background: rgba(0,0,0,0.35); color:#fff; }
+}

@@ -1,0 +1,31 @@
+ICE Challenge: Favorite BYU-I Devotionals
+
+Instructions: https://alveyworld.github.io/wdd130/activities/week06/ice-favorite_devo.html
+
+Overview
+
+Task: Create a Form and a Table in HTML.
+Purpose: Practice making forms and tables in html and CSS to display and prepare to collect data.
+Instructions
+
+ Open the files
+Download Starter files
+
+Start by downloading the zip file: Favorite Devo Zip and unzipping it and saving the favorite_devo folder in your ice folder
+Open in VS Code
+
+Open the favorite_devo folder in VS Code, then locate favdevo.html and open to edit.
+ Table of Favorites
+Create a table with 4 columns
+
+In the main section add to the div with the class name content-box. Write the html code for a table with 4 columns for Speaker, Title, Location, and Year. Add 3 rows and include appropriate information about your favorite devotional.
+ Form to add more
+Create a form to collect information
+
+After the table, code a form that will collect the 4 peices of information that could be used to add another devotional to the table. (You only need to make the form look good, it doesn't need to function)
+ Style the table and Form
+Add styles to the Table and Form
+
+Use css code to style the table and the form to make them look nice and match the page.
+ Submit
+Compress the favorite_devo folder and submit the zip file
