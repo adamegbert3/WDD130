@@ -34,3 +34,8 @@ nav {
     font-size: 20px;
     border-radius: 50%;
 }
+body h5 {
+    text-align: center;
+    padding: 5px;
+    font-size: 15px;
+}
