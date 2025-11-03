@@ -21,7 +21,7 @@ a {
     font-weight: bold;
 }
 p:hover {
-    font-size: 60px;
+    font-size: 30px;
 }
 footer {
     background-color: orange;
@@ -33,6 +33,10 @@ footer {
 }
 
 img:hover {
-    transform: scale(9.1);
+    transform: scale(2.1);
     transition: transform 0.3s;
+}
+nav ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
 }
