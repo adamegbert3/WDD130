@@ -11,21 +11,21 @@
   width: 100%; 
   height: 100px; 
   background-color: red; 
-  grid-column: _/_;
+  /* grid-column: _/_; */
 
 } 
 .green1 {
   width: 100px; 
   height: 100px; 
   background-color: green; 
-  grid-column: _/_;
+  /* grid-column: _/_; */
 
 } 
 .yellow1 {
   width: 100px; 
   height: 100px; 
   background-color: gold; 
-  grid-column: _/_;
+  /* grid-column: _/_; */
 } 
 .blue1 {
   width: 100%; 
@@ -39,32 +39,32 @@
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   align-items: center;
-  grid-column: _/_;
+  /* grid-column: _/_; */
   
 }
 .red2 {
   width: 100px; 
   height: 100px; 
   background-color: red; 
-  grid-column: _/_;
+  /* grid-column: _/_; */
 } 
 .green2 { 
   width: 100px; 
   height: 100px; 
   background-color: green; 
-  grid-column: _/_;
+  /* grid-column: _/_; */
 } 
 .yellow2 {
   width: 100px; 
   height: 100px; 
   background-color: gold; 
-  grid-column: _/_;
+  /* grid-column: _/_; */
 } 
 .blue2 {
   width: 100px; 
   height: 100px; 
   background-color: blue; 
-  grid-column: _/_;
+  /* grid-column: _/_; */
 } 
 /* Activity 3 styles */ 
 .content3 {
@@ -76,25 +76,25 @@
   width: 100px; 
   height: 100px; 
   background-color: red; 
-  grid-column: _/_;
+  /* grid-column: _/_; */
 } 
 .green3 {
   width: 100px; 
   height: 100px; 
   background-color: green;
-  grid-column: _/_;
+  /* grid-column: _/_; */
 } 
 .yellow3 {
   width: 100px; 
   height: 100px; 
   background-color: gold; 
-  grid-column: _/_;
+  /* grid-column: _/_; */
 } 
 .blue3 {
   width: 100px;
   height: 100px; 
   background-color: blue; 
-  grid-column: _/_;
+  /* grid-column: _/_; */
 } 
 /* Activity 4 styles */ 
 .content4 {
@@ -105,25 +105,25 @@
   width: 100px; 
   height: 100px; 
   background-color: red; 
-  grid-column: _/_;
+  /* grid-column: _/_; */
 } 
 .green4 {
   width: 100px; 
   height: 100px; 
   background-color: green; 
-  grid-column: _/_;
+  /* grid-column: _/_; */
 } 
 .yellow4 {
   width: 100px; 
   height: 100px; 
   background-color: gold; 
-  grid-column: _/_;
+  /* grid-column: _/_; */
 } 
 .blue4 {
   width: 100px; 
   height: 100px; 
   background-color: blue; 
-  grid-column: _/_;
+  /* grid-column: _/_; */
 } 
 /* Activity 5 styles */ 
 .content5 {
@@ -136,27 +136,27 @@
   width: 100px; 
   height: 100px; 
   background-color: red; 
-  grid-column: _/_;
+  /* grid-column: _/_; */
 } 
 .green5 { 
   width: 100px; 
   height: 100px; 
   background-color: green; 
-  grid-column: _/_;
+  /* grid-column: _/_; */
 
 } 
 .yellow5 {
   width: 100px; 
   height: 100px; 
   background-color: gold; 
-  grid-column: _/_;
+  /* grid-column: _/_; */
 
 } 
 .blue5 {
   width: 100px; 
   height: 100px; 
   background-color: blue; 
-  grid-column: _/_;
+  /* grid-column: _/_; */
 } 
 /* Activity 6 styles */ 
 .content6 {
