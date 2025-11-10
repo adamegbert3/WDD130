@@ -44,3 +44,13 @@ button a {
     text-decoration: none;
     text-shadow: none;
 }
+.profilepic {
+    width: 300px;
+    border-radius: 5%;
+}
+.profilepicoverview {
+    width: 100px;
+    border-radius: 5%;
+    display: grid;
+    grid-template-columns: 1fr 6fr;
+}

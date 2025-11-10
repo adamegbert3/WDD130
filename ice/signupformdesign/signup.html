@@ -14,6 +14,111 @@
         body {
             background: rgb(120, 96, 64);
         }
+        #formContainer {
+            background: white;
+            width: 300px;
+            padding: 20px;
+            margin: 50px auto;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+            position: relative;
+            display: grid;
+            gap: 10px;
+        }
+        h3 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        #closeBtn {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            background: gray;
+            color: white;
+            border: none;
+            border-radius: 50%;
+            width: 25px;
+            height: 25px;
+            cursor: pointer;
+        }
+        input {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+        #formContainer {
+            border-radius: 20px;
+            border-color: blue;
+            border-style: solid;
+            border-width: 5px;
+            
+        }
+        #PictureofScriptures {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+            gap: 10px;
+            margin-top: 20px;
+            margin-bottom: 0px;
+        }
+        img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+        #PictureofScriptures img {
+            width: 100%;
+            height: auto;
+            border-radius: 0px;
+            padding: 0px;
+        }
+        #myForm {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: auto;
+        }
+        #GenderDiv {
+            display: grid;
+            grid-template-columns: auto auto auto auto;
+            gap: 10px;
+            align-items: center;
+        }
+        #checkbox, #conditions {
+            grid-column: span 2;
+            display: grid;
+            grid-template-columns: auto auto auto auto;
+            gap: 10px;
+            align-items: center;
+            align-content: center;
+            
+            
+        }
+        #titleonpic {
+            position: absolute;
+            top: 20px;
+            left: 50%;
+            font-size: 20px;
+            color: white;
+            text-align: center;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+        }
+        h2, h3 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: absolute;
+            transform: translate(-50%, 100%);
+        }
+        button {
+            transform: translate(7%, 0%);
+        }
     </style>
 
 
@@ -23,7 +128,11 @@
 
 <body>
     <div id="formContainer">
-        <h3>Sign Up for Daily Scripture Feed</h3>
+        <img src="images/jesus_feeds_5000.jpeg" alt="Jesus Feeds 5000">
+        <div id="titleonpic">
+        <h2>Daily Feed</h2>
+        <h3>Scripture a Day</h3>
+        </div>
         <form id="myForm">
             <button type="button" id="closeBtn">X</button>
             <label for="username">User Name:</label>
@@ -36,19 +145,19 @@
             <input type="email" id="email" name="email" required>
 
             <label>Gender:</label>
-            <div>
+            <div id="GenderDiv">
                 <input type="radio" id="male" name="gender" value="male" required>
                 <label for="male">Male</label>
                 <input type="radio" id="female" name="gender" value="female" required>
                 <label for="female">Female</label>
             </div>
 
-            <section>
+            <section id="checkbox">
                 <input type="checkbox" id="newsletter" name="newsletter">
                 <label for="newsletter">Subscribe to newsletter</label>
             </section>
 
-            <section>
+            <section id="conditions">
                 <input type="checkbox" id="conditions" name="conditions" required>
                 <label for="conditions">I acknowledge the terms and conditions</label>
             </section>
@@ -57,6 +166,13 @@
                 <button type="submit">Submit</button>
             </section>
         </form>
+        <div id="PictureofScriptures">
+            <img src="images/old_testament.webp"`alt="Old Testament">
+            <img src="images/new_testament.webp"`alt="New Testament">
+            <img src="images/book_of_mormon.webp"`alt="Book of Mormon">
+            <img src="images/doctrine_and_covenants.webp"`alt="Doctrine and Covenants">
+            <img src="images/pearl_of_great_price.webp"`alt="Pearl of Great Price">
+        </div>
     </div>
 
     <div id="output"></div>
