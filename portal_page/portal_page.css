@@ -4,6 +4,7 @@ body {
 img {
     border-radius: 100%;
     width: 50px;
+    
 }
 header {
     display: grid;
@@ -27,7 +28,6 @@ main a {
 }
 nav {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
     gap: 10px;
     padding: 5px 5px 5px 5px;
     text-align: center;
@@ -37,7 +37,7 @@ nav {
 body h5 {
     text-align: center;
     padding: 5px;
-    font-size: 15px;
+    font-size: 21px;
 }
 button a {
     color: black;
