@@ -54,3 +54,17 @@ button a {
     display: grid;
     grid-template-columns: 1fr 6fr;
 }
+.welcomemsg {
+    text-align: center;
+}
+.links {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+}
+.footer ul {
+    list-style-type: none;
+    padding: 0;
+}
+.footer li {
+    margin: 5px 0;
+}
